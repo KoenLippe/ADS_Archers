@@ -7,25 +7,13 @@ import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class ArcherTest {
-
-    public List<Archer> archers;
-
-
-    @BeforeEach
-    public void setup() {
-        archers = Archer.generateArchers(3);
-    }
+public class ArcherTest extends testSetup{
 
     @Test
     public void archerIdsIncreaseCorrectly() {
         assertTrue(archers.get(1).getId() == archers.get(0).getId()+ 1);
         assertTrue(archers.get(2).getId() == archers.get(1).getId()+ 1);
     }
-
-
-
-
 
     @Test
     public void iteratorImplementedCorrectlyIfImplemented() {
