@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="69e7baea-9e0b-46ae-ad95-ec3d4e3a4ac7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Assignment 1 - Trains/TrainsSolution.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archery.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Excercise Recursion/Recursion.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Exercise Pair/Algorithms.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Exercise Shapes/shapes_student.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w1-Pair Exercise/Algorithms.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w1-Pair Exercise/src/com/company/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w1-Pair Exercise/src/com/company/Pair.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w1-Pair Exercise/test/com/company/PairTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w1-Shapes Exercise/Exercise pc 1 OO revision.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w1-Shapes Exercise/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w1-Shapes Exercise/shapes_student.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w1-Shapes Exercise/src/main/java/Board.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w1-Shapes Exercise/src/main/java/Circle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w1-Shapes Exercise/src/main/java/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w1-Shapes Exercise/src/main/java/Shape.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w1-Shapes Exercise/src/test/java/ShapeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w1-Shapes Exercise/target/classes/Board$Iterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w1-Shapes Exercise/target/classes/Board.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w1-Shapes Exercise/target/classes/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w1-Shapes Exercise/target/classes/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w1-Shapes Exercise/target/classes/Shape.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w1-Shapes Exercise/target/test-classes/ShapeTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-BookSections Exercise/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-BookSections Exercise/src/main/java/controller/BookLauncher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-BookSections Exercise/w2-Exercise BookSections recursive.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Recursion Exercise/Recursion.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Recursion Exercise/src/nl/koenlippe/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Trains Assignment/TrainsSolution.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Trains Assignment/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Trains Assignment/src/main/java/controller/TrainLauncher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Trains Assignment/src/main/java/model/FreightWagon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Trains Assignment/src/main/java/model/Locomotive.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Trains Assignment/src/main/java/model/PassengerWagon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Trains Assignment/src/main/java/model/Train.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Trains Assignment/src/main/java/model/Wagon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Trains Assignment/src/main/java/utils/Shunter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Trains Assignment/src/main/java/utils/WagonIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Trains Assignment/src/test/Trains Tests Koen.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Trains Assignment/src/test/java/setup/TestSetup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Trains Assignment/src/test/java/tests/LocomotiveTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Trains Assignment/src/test/java/tests/ShunterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Trains Assignment/src/test/java/tests/TrainTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Trains Assignment/src/test/java/tests/WagonTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Trains Assignment/target/classes/META-INF/TrainsSolution.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Trains Assignment/target/classes/controller/TrainLauncher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Trains Assignment/target/classes/model/FreightWagon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Trains Assignment/target/classes/model/Locomotive.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Trains Assignment/target/classes/model/PassengerWagon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Trains Assignment/target/classes/model/Train.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Trains Assignment/target/classes/model/Wagon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Trains Assignment/target/classes/utils/Shunter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Trains Assignment/target/classes/utils/WagonIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Trains Assignment/target/test-classes/META-INF/TrainsSolution.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Trains Assignment/target/test-classes/setup/TestSetup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Trains Assignment/target/test-classes/tests/LocomotiveTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Trains Assignment/target/test-classes/tests/ShunterTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Trains Assignment/target/test-classes/tests/TrainTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Trains Assignment/target/test-classes/tests/WagonTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Trains Assignment/w1-Assignment Trains.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../w2-Trains Assignment/w1_Train_Yan_Koen.zip" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1RHnazZuRoWk6yXt6mjpcqmbTG3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.ExtendedArcherTest.testgetWeightedScore">
+    <configuration name="ArcherTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="archery" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nl.hva.ict.se.ads.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nl.hva.ict.se.ads" />
+      <option name="MAIN_CLASS_NAME" value="nl.hva.ict.se.ads.ArcherTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArcherTest.archerIdsIncreaseCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="archery" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nl.hva.ict.se.ads.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nl.hva.ict.se.ads" />
+      <option name="MAIN_CLASS_NAME" value="nl.hva.ict.se.ads.ArcherTest" />
+      <option name="METHOD_NAME" value="archerIdsIncreaseCorrectly" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArcherTest.iteratorImplementedCorrectlyIfImplemented" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="archery" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nl.hva.ict.se.ads.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nl.hva.ict.se.ads" />
+      <option name="MAIN_CLASS_NAME" value="nl.hva.ict.se.ads.ArcherTest" />
+      <option name="METHOD_NAME" value="iteratorImplementedCorrectlyIfImplemented" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArcherTest.testArcherToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="archery" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nl.hva.ict.se.ads.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nl.hva.ict.se.ads" />
+      <option name="MAIN_CLASS_NAME" value="nl.hva.ict.se.ads.ArcherTest" />
+      <option name="METHOD_NAME" value="testArcherToString" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExtendedArcherTest.testgetWeightedScore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="archery" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nl.hva.ict.se.ads.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nl.hva.ict.se.ads" />
+      <option name="MAIN_CLASS_NAME" value="nl.hva.ict.se.ads.ExtendedArcherTest" />
+      <option name="METHOD_NAME" value="testgetWeightedScore" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ExtendedArcherTest.testgetWeightedScore" />
+        <item itemvalue="JUnit.ArcherTest" />
+        <item itemvalue="JUnit.ArcherTest.iteratorImplementedCorrectlyIfImplemented" />
+        <item itemvalue="JUnit.ArcherTest.testArcherToString" />
+        <item itemvalue="JUnit.ArcherTest.archerIdsIncreaseCorrectly" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="69e7baea-9e0b-46ae-ad95-ec3d4e3a4ac7" name="Default Changelist" comment="" />
+      <created>1569332956417</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569332956417</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
