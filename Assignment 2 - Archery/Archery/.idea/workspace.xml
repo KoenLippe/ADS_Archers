@@ -4,6 +4,10 @@
     <list default="true" id="69e7baea-9e0b-46ae-ad95-ec3d4e3a4ac7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/hva/ict/se/ads/ChampionSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/hva/ict/se/ads/ChampionSelector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/nl/hva/ict/se/ads/ChampionSelectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nl/hva/ict/se/ads/ChampionSelectorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nl/hva/ict/se/ads/ChampionSelector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/hva/ict/se/ads/ChampionSelector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nl/hva/ict/se/ads/utils/sortingScheme.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/hva/ict/se/ads/utils/sortingScheme.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/nl/hva/ict/se/ads/ChampionSelectorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/nl/hva/ict/se/ads/ChampionSelectorTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -156,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569594560857</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="sync">
+      <created>1570016640735</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1570016640735</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,6 +185,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Extended tests from TestSetup. Added JavaDoc to testGetWeightedScore() test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Extended tests from TestSetup. Added JavaDoc to testGetWeightedScore() test" />
+    <MESSAGE value="sync" />
+    <option name="LAST_COMMIT_MESSAGE" value="sync" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/nl/hva/ict/se/ads/ChampionSelector.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

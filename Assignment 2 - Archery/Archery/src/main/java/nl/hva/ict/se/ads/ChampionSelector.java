@@ -16,21 +16,21 @@ public class ChampionSelector {
         //Insertion Sort
 
         for (int i = 1; i < archers.size() ; i++) {
-            Archer tempArcher = archers.get(i);
+           Archer comparingTo = archers.get(i);
 
-            int selector = i -1;
+           int j = i - 1;
 
-
-            while(scoringScheme.compare(tempArcher, archers.get(selector)) > -1) {
-                selector++;
-            }
-
+           while(j >= 0 && scoringScheme.compare(archers.get(j), comparingTo) > 0) {
+               //comparingTo is smaller than the current Archer at index j.
+               //comparingTo is is memory so j + 1 can be overridden.
+               archers.set(j + 1, archers.get(j)); //Moving last sorted Archer up one.
+               j -= 1;
+           }
+           //Finally setting comparingTo at the correct place
+           archers.set(j + 1, comparingTo);
 
         }
-
         return archers;
-
-
     }
 
     /**

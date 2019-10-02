@@ -1,6 +1,7 @@
 package nl.hva.ict.se.ads;
 
 import nl.hva.ict.se.ads.utils.sortingScheme;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -22,12 +23,14 @@ class ChampionSelectorTest extends testSetup {
     public void selInsSortAndCollectionSortResultInSameOrder() {
         List<Archer> unsortedArchersForSelIns = Archer.generateArchers(4); //was 23
         List<Archer> unsortedArchersForCollection = new ArrayList<>(unsortedArchersForSelIns);
+        List<Archer> sortedArchersSelIns = ChampionSelector.selInsSort(unsortedArchersForSelIns, comparator);
 
-        //List<Archer> sortedArchersSelIns = ChampionSelector.selInsSort(unsortedArchersForSelIns, comparator);
 
-        for (Archer archer : unsortedArchersForCollection) {
+        for(Archer archer : unsortedArchersForCollection) {
             System.out.println(archer);
         }
+
+
 
         System.out.println();
         System.out.println();
@@ -42,7 +45,7 @@ class ChampionSelectorTest extends testSetup {
         }
 
 
-        //assertEquals(sortedArchersCollection, sortedArchersSelIns);
+        Assertions.assertEquals(sortedArchersCollection, sortedArchersSelIns);
     }
 
 }
