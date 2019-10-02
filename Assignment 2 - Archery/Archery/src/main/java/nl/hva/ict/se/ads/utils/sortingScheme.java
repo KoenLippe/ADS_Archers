@@ -16,7 +16,8 @@ public class sortingScheme implements Comparator<Archer> {
 
             return archer1.getWeightedScore() - archer2.getWeightedScore();
         }
-        return archer1.getWeightedScore() - archer2.getWeightedScore();
+
+        return archer1.getTotalScore() - archer2.getTotalScore();
 
     }
 }
