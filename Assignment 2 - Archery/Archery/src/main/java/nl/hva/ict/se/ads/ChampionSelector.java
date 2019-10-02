@@ -13,8 +13,24 @@ public class ChampionSelector {
      * This method uses either selection sort or insertion sort for sorting the archers.
      */
     public static List<Archer> selInsSort(List<Archer> archers, Comparator<Archer> scoringScheme) {
+        //Insertion Sort
+
+        for (int i = 1; i < archers.size() ; i++) {
+            Archer tempArcher = archers.get(i);
+
+            int selector = i -1;
+
+
+            while(scoringScheme.compare(tempArcher, archers.get(selector)) > -1) {
+                selector++;
+            }
+
+
+        }
 
         return archers;
+
+
     }
 
     /**
