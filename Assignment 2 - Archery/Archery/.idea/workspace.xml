@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69e7baea-9e0b-46ae-ad95-ec3d4e3a4ac7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/nl/hva/ict/se/ads/testSetup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nl/hva/ict/se/ads/utils/sortingScheme.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/nl/hva/ict/se/ads/ArcherTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nl/hva/ict/se/ads/ArcherTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/hva/ict/se/ads/Archer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/hva/ict/se/ads/Archer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/hva/ict/se/ads/ChampionSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/hva/ict/se/ads/ChampionSelector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/nl/hva/ict/se/ads/ChampionSelectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nl/hva/ict/se/ads/ChampionSelectorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/nl/hva/ict/se/ads/ExtendedArcherTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nl/hva/ict/se/ads/ExtendedArcherTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nl/hva/ict/se/ads/Archer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/hva/ict/se/ads/Archer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/nl/hva/ict/se/ads/ArcherTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/nl/hva/ict/se/ads/ArcherTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/nl/hva/ict/se/ads/ChampionSelectorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/nl/hva/ict/se/ads/ChampionSelectorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/nl/hva/ict/se/ads/ExtendedArcherTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/nl/hva/ict/se/ads/ExtendedArcherTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +40,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../w1-Assignment-TrainsStartProject" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -55,7 +57,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ArcherTest">
+  <component name="RunManager" selected="JUnit.ChampionSelectorTest.selInsSortAndCollectionSortResultInSameOrder">
     <configuration name="ArcherTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="archery" />
       <extension name="coverage">
@@ -71,7 +73,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArcherTest.archerIdsIncreaseCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ChampionSelectorTest.selInsSortAndCollectionSortResultInSameOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="archery" />
       <extension name="coverage">
         <pattern>
@@ -80,14 +82,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="nl.hva.ict.se.ads" />
-      <option name="MAIN_CLASS_NAME" value="nl.hva.ict.se.ads.ArcherTest" />
-      <option name="METHOD_NAME" value="archerIdsIncreaseCorrectly" />
+      <option name="MAIN_CLASS_NAME" value="nl.hva.ict.se.ads.ChampionSelectorTest" />
+      <option name="METHOD_NAME" value="selInsSortAndCollectionSortResultInSameOrder" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArcherTest.iteratorImplementedCorrectlyIfImplemented" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExtendedArcherTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="archery" />
       <extension name="coverage">
         <pattern>
@@ -96,14 +98,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="nl.hva.ict.se.ads" />
-      <option name="MAIN_CLASS_NAME" value="nl.hva.ict.se.ads.ArcherTest" />
-      <option name="METHOD_NAME" value="iteratorImplementedCorrectlyIfImplemented" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="nl.hva.ict.se.ads.ExtendedArcherTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArcherTest.testArcherToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExtendedArcherTest.testCompareTo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="archery" />
       <extension name="coverage">
         <pattern>
@@ -112,8 +113,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="nl.hva.ict.se.ads" />
-      <option name="MAIN_CLASS_NAME" value="nl.hva.ict.se.ads.ArcherTest" />
-      <option name="METHOD_NAME" value="testArcherToString" />
+      <option name="MAIN_CLASS_NAME" value="nl.hva.ict.se.ads.ExtendedArcherTest" />
+      <option name="METHOD_NAME" value="testCompareTo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -137,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ChampionSelectorTest.selInsSortAndCollectionSortResultInSameOrder" />
+        <item itemvalue="JUnit.ExtendedArcherTest.testCompareTo" />
+        <item itemvalue="JUnit.ExtendedArcherTest" />
         <item itemvalue="JUnit.ArcherTest" />
         <item itemvalue="JUnit.ExtendedArcherTest.testgetWeightedScore" />
-        <item itemvalue="JUnit.ArcherTest.iteratorImplementedCorrectlyIfImplemented" />
-        <item itemvalue="JUnit.ArcherTest.testArcherToString" />
-        <item itemvalue="JUnit.ArcherTest.archerIdsIncreaseCorrectly" />
       </list>
     </recent_temporary>
   </component>
@@ -156,6 +157,14 @@
       <option name="presentableId" value="Default" />
       <updated>1569332956417</updated>
     </task>
+    <task id="LOCAL-00001" summary="Extended tests from TestSetup. Added JavaDoc to testGetWeightedScore() test">
+      <created>1569594560857</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1569594560857</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -170,5 +179,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Extended tests from TestSetup. Added JavaDoc to testGetWeightedScore() test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Extended tests from TestSetup. Added JavaDoc to testGetWeightedScore() test" />
   </component>
 </project>

@@ -35,7 +35,7 @@ public class Archer {
      * @param firstName the archers first name.
      * @param lastName  the archers surname.
      */
-    private Archer(String firstName, String lastName) {
+    Archer(String firstName, String lastName) {
         this.firstname = firstName;
         this.lastname = lastName;
         this.roundPoints = new int[MAX_ROUNDS][MAX_ARROWS];
@@ -157,7 +157,9 @@ public class Archer {
                 this.lastname);
     }
 
-    public int[][] getRoundPoints() {
-        return roundPoints;
-    }
+
+
+
+
+
 }

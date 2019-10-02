@@ -1,5 +1,6 @@
 package nl.hva.ict.se.ads;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -13,24 +14,38 @@ public class ExtendedArcherTest extends ArcherTest {
      * We used this test method to print out all the points and add them by hand using method
      * described in the assignment. Than comparing it to the calculated WeightedScore by the class.
      */
-    @Test
-    public void testgetWeightedScore() {
+
+    Archer archer1, archer2;
 
 
-        List<Archer> list = Archer.generateArchers(2);
+    public void setup() {
+        archer1 = new Archer("Koen", "Lippe");
+        archer2 = new Archer("Yan", "Alexandre");
+        int[] points = new int[]{1, 1, 1};
+        int[] points2 = new int[]{2, 2, 2};
 
-        int[][] pointsArray = list.get(0).getRoundPoints();
-
-        for (int ronde = 0; ronde < 10; ronde++) {
-            for (int point = 0; point < 3; point++) {
-                System.out.print(pointsArray[ronde][point] + " ");
-            }
+        for (int i = 0; i < Archer.MAX_ROUNDS; i++) {
+            archer1.registerScoreForRound(i, points);
+            archer2.registerScoreForRound(i, points2);
         }
 
+    }
 
-        System.out.println();
-        System.out.println(list.get(0).getWeightedScore());
+    @Test
+    public void testgetWeightedScore() {
+        final int TEST_VALUE = 8;
 
+        List<Archer> list = Archer.generateArchers(2);
+        int[] points = new int[]{TEST_VALUE, TEST_VALUE + 1, TEST_VALUE};
+
+        for (int i = 0; i < Archer.MAX_ROUNDS; i++) {
+            list.get(0).registerScoreForRound(i, points);
+        }
+
+        int expected = (TEST_VALUE + 1 + TEST_VALUE + 2 + TEST_VALUE + 1) * Archer.MAX_ROUNDS;
+
+        Assertions.assertEquals(list.get(0).getWeightedScore(), expected);
 
     }
+
 }
