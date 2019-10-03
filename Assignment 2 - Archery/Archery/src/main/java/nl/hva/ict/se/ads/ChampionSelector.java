@@ -36,33 +36,71 @@ public class ChampionSelector {
     /**
      * This method uses quick sort for sorting the archers.
      */
-    public static List<Archer> quickSort(List<Archer> archers, Comparator<Archer> scoringScheme) {
-        if (archers.size() > 1) {
-            int start = 0;
-            int end = archers.size() - 1;
-            int pivot = start;
-            while (scoringScheme.compare(archers.get(start), archers.get(pivot)) < 0) {
-                //While start is smaller than pivot
-                //*Make start bigger
-                start++;
-            }
-            while (scoringScheme.compare(archers.get(end), archers.get(pivot)) > 0) {
-                //while end is bigger than pivot
-                //*Make end smaller//
-                end--;
-            }
-            if (start <= end) {
-                //If they cross
+    public static List<Archer> quickSort(List<Archer> archers, Comparator<Archer> scoringScheme, int left, int right) {
 
-                //*Swap both
-                //Archer left = archers.get()
-            }
+        if (left < right){
 
-            return archers;
+            /**
+             * The final pivot position returned by the partition() method.
+             * It is in the middle of the left and right partitions
+             **/
+            int finalPivotPosition = partition(archers, scoringScheme, left, right);
+
+            // Quickort the partitions to the left and the right of the pivot
+            quickSort(archers, scoringScheme, left, finalPivotPosition -1);
+            quickSort(archers, scoringScheme, finalPivotPosition -1, right);
         }
-
-        return null;
+        // Return the quicksorted list of archers
+        return archers;
     }
+
+    public static int partition(List<Archer> archers, Comparator<Archer> scoringScheme, int left, int right){
+
+        //Pivot is the last element
+        Archer pivot = archers.get(right);
+
+        int tailLeftPartition = left - 1;
+
+        // Let scanner scan till the end of the partition
+        for (int scanner = left; scanner < right ; scanner++) {
+
+            //If scanner is smaller or equal than the pivot
+            if(scoringScheme.compare(archers.get(scanner), pivot) < 0){
+
+                //Increase the size of items that are smaller than the pivot
+                tailLeftPartition++;
+
+                swap(archers, tailLeftPartition, scanner);
+            }
+
+        }
+        /**
+         * Set the pivot in its correct place, that is,
+         * after the section of items that is less than the pivot
+         */
+        swap(archers,tailLeftPartition + 1, right);
+
+        //Return the pivots position
+        return tailLeftPartition + 1;
+    }
+
+    /**
+     * This method swaps two elements
+     *
+     * @param archers The archers list
+     * @param tailLeftPartition The end of the partition with items less than the pivot
+     * @param scanner The parameter that scans the next element
+     */
+    private static void swap(List<Archer> archers, int tailLeftPartition, int scanner) {
+
+        // Makes copy of tail
+        Archer tailLeft = archers.get(tailLeftPartition);
+
+        //Swaps tail element with scanner element
+        archers.set(tailLeftPartition, archers.get(scanner));
+        archers.set(scanner, tailLeft);
+    }
+
 
     /**
      * This method uses the Java collections sort algorithm for sorting the archers.

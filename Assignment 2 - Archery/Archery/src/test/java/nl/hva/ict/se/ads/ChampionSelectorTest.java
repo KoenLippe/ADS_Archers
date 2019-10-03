@@ -49,4 +49,26 @@ class ChampionSelectorTest extends TestSetup {
         Assertions.assertEquals(sortedArchersCollection, sortedArchersSelIns);
     }
 
+    @Test
+    public void quickSortTest() {
+        List<Archer> unsortedArchersForQuickSort = Archer.generateArchers(4);
+
+        for(Archer archer : unsortedArchersForQuickSort) {
+            System.out.println(archer);
+        }
+
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+
+        ChampionSelector.quickSort(unsortedArchersForQuickSort, comparator, 0, unsortedArchersForQuickSort.size()-1);
+
+        for(Archer archer : unsortedArchersForQuickSort) {
+            System.out.println(archer);
+        }
+    }
+
+
+
 }
