@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="69e7baea-9e0b-46ae-ad95-ec3d4e3a4ac7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Assignment-2-Archery-v2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/hva/ict/se/ads/ChampionSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/hva/ict/se/ads/ChampionSelector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/nl/hva/ict/se/ads/ExtendedArcherTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/nl/hva/ict/se/ads/ExtendedArcherTest.class" afterDir="false" />
-    </list>
+    <list default="true" id="69e7baea-9e0b-46ae-ad95-ec3d4e3a4ac7" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +76,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="952" />
     <option name="width" value="977" />
     <option name="height" value="1038" />

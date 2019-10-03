@@ -41,12 +41,12 @@ public class ChampionSelector {
             int start = 0;
             int end = archers.size() - 1;
             int pivot = start;
-            while (scoringScheme.compare(archers.get(start), archers.get(pivot)) < 0) ){
+            while (scoringScheme.compare(archers.get(start), archers.get(pivot)) < 0){
                 //While start is smaller than pivot
                 //*Make start bigger
                 start++;
             }
-            while (end > ){
+            while (end > end){
                 //while end is bigger than pivot
                 //*Make end smaller//
                 end--;
