@@ -1,7 +1,48 @@
 package nl.hva.ict.se.ads;
 
+import nl.hva.ict.se.ads.utils.ArcherComparator;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
+import java.util.List;
+
 /**
  * Place all your own tests for ChampionSelector in this class. Tests in any other class will be ignored!
  */
 public class ExtendedChampionSelectorTest extends ChampionSelectorTest {
+
+    @Test
+    public void testQuickSort() {
+        List<Archer> archers = Archer.generateArchers(10);
+        List<Archer> collectionSorted = archers;
+        ChampionSelector.collectionSort(collectionSorted, new ArcherComparator());
+
+
+
+        ChampionSelector.quickSort(archers, new ArcherComparator());
+
+        System.out.println();
+        System.out.println();
+        System.out.println();
+
+        System.out.println("Using Own quicksort");
+        for(Archer archer : archers) {
+            System.out.println(archer);
+        }
+
+        System.out.println();
+        System.out.println();
+        System.out.println();
+
+        System.out.println("Using Java's Selection sort");
+        for(Archer archer : collectionSorted) {
+            System.out.println(archer);
+        }
+
+
+
+
+
+        Assertions.assertEquals(archers, collectionSorted);
+    }
 }

@@ -15,19 +15,19 @@ public class ChampionSelector {
     public static List<Archer> selInsSort(List<Archer> archers, Comparator<Archer> scoringScheme) {
         //Insertion Sort
 
-        for (int i = 1; i < archers.size() ; i++) {
-           Archer comparingTo = archers.get(i);
+        for (int i = 1; i < archers.size(); i++) {
+            Archer comparingTo = archers.get(i);
 
-           int j = i - 1;
+            int j = i - 1;
 
-           while(j >= 0 && scoringScheme.compare(archers.get(j), comparingTo) > 0) {
-               //comparingTo is smaller than the current Archer at index j.
-               //comparingTo is is memory so j + 1 can be overridden.
-               archers.set(j + 1, archers.get(j)); //Moving last sorted Archer up one.
-               j -= 1;
-           }
-           //Finally setting comparingTo at the correct place
-           archers.set(j + 1, comparingTo);
+            while (j >= 0 && scoringScheme.compare(archers.get(j), comparingTo) > 0) {
+                //comparingTo is smaller than the current Archer at index j.
+                //comparingTo is is memory so j + 1 can be overridden.
+                archers.set(j + 1, archers.get(j)); //Moving last sorted Archer up one.
+                j -= 1;
+            }
+            //Finally setting comparingTo at the correct place
+            archers.set(j + 1, comparingTo);
 
         }
         return archers;
@@ -37,32 +37,82 @@ public class ChampionSelector {
      * This method uses quick sort for sorting the archers.
      */
     public static List<Archer> quickSort(List<Archer> archers, Comparator<Archer> scoringScheme) {
-        if (archers.size() > 1) {
-            int start = 0;
-            int end = archers.size() - 1;
-            int pivot = start;
-            while (scoringScheme.compare(archers.get(start), archers.get(pivot)) < 0) {
-                //While start is smaller than pivot
-                //*Make start bigger
-                start++;
-            }
-            while (scoringScheme.compare(archers.get(end), archers.get(pivot)) > 0) {
-                //while end is bigger than pivot
-                //*Make end smaller//
-                end--;
-            }
-            if (start <= end) {
-                //If they cross
 
-                //*Swap both
-                //Archer left = archers.get()
-            }
 
-            return archers;
+        sort(archers, 0, archers.size() - 1, scoringScheme);
+        return archers;
+    }
+
+    private static void sort(List<Archer> archers, int low, int high, Comparator<Archer> comparator) {
+        if (low < high) {
+            int j = partition(archers, low, high, comparator);
+            sort(archers, low, j , comparator);
+            sort(archers, j + 1, high, comparator);
         }
 
-        return null;
+//        if (low < high) {
+//            int j = partition(archers, low, high, comparator);
+//            sort(archers, low, j -1 , comparator);
+//            sort(archers, j + 1, high, comparator);
+//        }
+
     }
+
+    private static int partition(List<Archer> archers, int low, int high, Comparator<Archer> comparator) {
+
+        /////////////////// Other Possible Implementation //////////////////
+        //Pivot is the beginning
+//        int pivotIndex = high;
+//
+//        int i = low - 1; //Smalller index
+//
+//
+//        for (int j = low; j < high; j++) { //J = higher index
+//            if (comparator.compare(archers.get(j), archers.get(pivotIndex)) <= 0) {
+//                i++;
+//                swap(archers, i, j);
+//            }
+//        }
+//
+//        swap(archers, i + 1, high);
+//        return i + 1; //Correctly placed pivot position
+
+        /////////////////// End Other Possible Implementation //////////////////
+
+        int pivotIndex = low;
+
+        int i = low;
+        int j = high - 1;
+
+
+        while(i < j) {
+            do {
+                i++;
+            } while (comparator.compare(archers.get(i), archers.get(pivotIndex)) <= 0);
+
+            do {
+                j--;
+            } while(comparator.compare(archers.get(pivotIndex), archers.get(j)) > 0);
+
+            swap(archers, i, j);
+        }
+
+
+        swap(archers, low, j);
+
+        return j; //Correctly placed pivot index
+
+
+    }
+
+
+    private static void swap(List<Archer> archers, int archer1, int archer2) {
+        Archer savedArcher = archers.get(archer1);  //Save variable from being overridden
+        archers.set(archer1, archers.get(archer2)); //2 times archer2
+        archers.set(archer2, savedArcher);          //Swapped
+
+    }
+
 
     /**
      * This method uses the Java collections sort algorithm for sorting the archers.
