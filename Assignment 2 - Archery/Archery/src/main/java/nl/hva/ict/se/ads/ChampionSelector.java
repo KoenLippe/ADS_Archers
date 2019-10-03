@@ -37,28 +37,31 @@ public class ChampionSelector {
      * This method uses quick sort for sorting the archers.
      */
     public static List<Archer> quickSort(List<Archer> archers, Comparator<Archer> scoringScheme) {
-        if(archers.size()>1){
+        if (archers.size() > 1) {
             int start = 0;
             int end = archers.size() - 1;
             int pivot = start;
-            while (scoringScheme.compare(archers.get(start), archers.get(pivot)) < 0){
+            while (scoringScheme.compare(archers.get(start), archers.get(pivot)) < 0) {
                 //While start is smaller than pivot
                 //*Make start bigger
                 start++;
             }
-            while (scoringScheme.compare(archers.get(end), archers.get(pivot)) > 0){
+            while (scoringScheme.compare(archers.get(end), archers.get(pivot)) > 0) {
                 //while end is bigger than pivot
                 //*Make end smaller//
                 end--;
             }
-            if(start<=end){
+            if (start <= end) {
                 //If they cross
 
                 //*Swap both
-                Archer left = archers.get()
+                //Archer left = archers.get()
             }
 
-        return archers;
+            return archers;
+        }
+
+        return null;
     }
 
     /**
