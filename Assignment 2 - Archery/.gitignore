@@ -1,8 +1,0 @@
-*.class
-*.class/
-.idea/
-target/
-**.log
-**.xml
-*.log
-*.xml
