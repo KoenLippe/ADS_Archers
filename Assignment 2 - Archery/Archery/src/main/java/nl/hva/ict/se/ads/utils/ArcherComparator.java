@@ -4,7 +4,7 @@ import nl.hva.ict.se.ads.Archer;
 
 import java.util.Comparator;
 
-public class sortingScheme implements Comparator<Archer> {
+public class ArcherComparator implements Comparator<Archer> {
 
     @Override
     public int compare(Archer archer1, Archer archer2) {

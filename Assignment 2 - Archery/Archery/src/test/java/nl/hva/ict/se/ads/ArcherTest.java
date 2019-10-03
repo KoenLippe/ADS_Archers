@@ -1,13 +1,14 @@
 package nl.hva.ict.se.ads;
 
-import org.junit.jupiter.api.BeforeEach;
+import nl.hva.ict.se.ads.Archer;
+import nl.hva.ict.se.ads.setup.TestSetup;
 import org.junit.jupiter.api.Test;
 
 import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class ArcherTest extends testSetup{
+public class ArcherTest extends TestSetup {
 
     @Test
     public void archerIdsIncreaseCorrectly() {

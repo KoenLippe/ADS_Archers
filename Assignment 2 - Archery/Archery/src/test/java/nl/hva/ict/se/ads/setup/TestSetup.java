@@ -1,10 +1,11 @@
-package nl.hva.ict.se.ads;
+package nl.hva.ict.se.ads.setup;
 
+import nl.hva.ict.se.ads.Archer;
 import org.junit.jupiter.api.BeforeEach;
 
 import java.util.List;
 
-public class testSetup {
+public class TestSetup {
 
     public List<Archer> archers;
 
@@ -13,4 +14,6 @@ public class testSetup {
     public void makeArchers() {
         archers = Archer.generateArchers(3);
     }
+
+
 }

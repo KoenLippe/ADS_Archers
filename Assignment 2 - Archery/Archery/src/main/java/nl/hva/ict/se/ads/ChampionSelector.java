@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class ChampionSelector {
     /**
-     * This method uses either selection sort or insertion sort for sorting the archers.
+     * This method uses insertion sort for sorting the archers.
      */
     public static List<Archer> selInsSort(List<Archer> archers, Comparator<Archer> scoringScheme) {
         //Insertion Sort
