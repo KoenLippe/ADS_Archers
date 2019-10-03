@@ -2,12 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69e7baea-9e0b-46ae-ad95-ec3d4e3a4ac7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nl/hva/ict/se/ads/utils/EfficiencyTimeHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/nl/hva/ict/se/ads/EfficiencyTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/hva/ict/se/ads/ChampionSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/hva/ict/se/ads/ChampionSelector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/hva/ict/se/ads/utils/sortingScheme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/hva/ict/se/ads/utils/ArcherComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/nl/hva/ict/se/ads/ArcherTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nl/hva/ict/se/ads/ArcherTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/nl/hva/ict/se/ads/ChampionSelectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nl/hva/ict/se/ads/ChampionSelectorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/nl/hva/ict/se/ads/ExtendedArcherTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nl/hva/ict/se/ads/ExtendedArcherTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/nl/hva/ict/se/ads/testSetup.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/nl/hva/ict/se/ads/ChampionSelector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/hva/ict/se/ads/ChampionSelector.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/hva/ict/se/ads/utils/sortingScheme.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/hva/ict/se/ads/utils/sortingScheme.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nl/hva/ict/se/ads/utils/sortingScheme.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/nl/hva/ict/se/ads/ArcherTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/nl/hva/ict/se/ads/ArcherTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/nl/hva/ict/se/ads/ChampionSelectorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/nl/hva/ict/se/ads/ChampionSelectorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/nl/hva/ict/se/ads/ExtendedArcherTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/nl/hva/ict/se/ads/ExtendedArcherTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/nl/hva/ict/se/ads/testSetup.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,10 +46,16 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../w1-Assignment-TrainsStartProject" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../ads_archerassignment1" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="nl.hva.ict.se.ads" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -53,39 +69,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ChampionSelectorTest.selInsSortAndCollectionSortResultInSameOrder">
-    <configuration name="ArcherTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="archery" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="nl.hva.ict.se.ads.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="nl.hva.ict.se.ads" />
-      <option name="MAIN_CLASS_NAME" value="nl.hva.ict.se.ads.ArcherTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.EfficiencyTest.efficiencyTestInsertionSort">
     <configuration name="ChampionSelectorTest.selInsSortAndCollectionSortResultInSameOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="archery" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="nl.hva.ict.se.ads.*" />
+          <option name="PATTERN" value="nl.hva.ict.se.ads.setup.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="nl.hva.ict.se.ads" />
-      <option name="MAIN_CLASS_NAME" value="nl.hva.ict.se.ads.ChampionSelectorTest" />
+      <option name="PACKAGE_NAME" value="nl.hva.ict.se.ads.models" />
+      <option name="MAIN_CLASS_NAME" value="nl.hva.ict.se.ads.models.ChampionSelectorTest" />
       <option name="METHOD_NAME" value="selInsSortAndCollectionSortResultInSameOrder" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExtendedArcherTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EfficiencyTest.efficiencyTestInsertionSort" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="archery" />
       <extension name="coverage">
         <pattern>
@@ -94,8 +95,43 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="nl.hva.ict.se.ads" />
-      <option name="MAIN_CLASS_NAME" value="nl.hva.ict.se.ads.ExtendedArcherTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="nl.hva.ict.se.ads.EfficiencyTest" />
+      <option name="METHOD_NAME" value="efficiencyTestInsertionSort" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea -Xint" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EfficiencyTest.measureEfficiency" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="archery" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nl.hva.ict.se.ads.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nl.hva.ict.se.ads" />
+      <option name="MAIN_CLASS_NAME" value="nl.hva.ict.se.ads.EfficiencyTest" />
+      <option name="METHOD_NAME" value="measureEfficiency" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EfficiencyTest.measureEfficiencySelectionSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="archery" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nl.hva.ict.se.ads.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nl.hva.ict.se.ads" />
+      <option name="MAIN_CLASS_NAME" value="nl.hva.ict.se.ads.EfficiencyTest" />
+      <option name="METHOD_NAME" value="measureEfficiencySelectionSort" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -104,41 +140,31 @@
       <module name="archery" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="nl.hva.ict.se.ads.*" />
+          <option name="PATTERN" value="nl.hva.ict.se.ads.setup.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="nl.hva.ict.se.ads" />
-      <option name="MAIN_CLASS_NAME" value="nl.hva.ict.se.ads.ExtendedArcherTest" />
+      <option name="PACKAGE_NAME" value="nl.hva.ict.se.ads.models" />
+      <option name="MAIN_CLASS_NAME" value="nl.hva.ict.se.ads.models.ExtendedArcherTest" />
       <option name="METHOD_NAME" value="testCompareTo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExtendedArcherTest.testgetWeightedScore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="archery" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="nl.hva.ict.se.ads.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="nl.hva.ict.se.ads" />
-      <option name="MAIN_CLASS_NAME" value="nl.hva.ict.se.ads.ExtendedArcherTest" />
-      <option name="METHOD_NAME" value="testgetWeightedScore" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="JUnit.EfficiencyTest.efficiencyTestInsertionSort" />
+      <item itemvalue="JUnit.ChampionSelectorTest.selInsSortAndCollectionSortResultInSameOrder" />
+      <item itemvalue="JUnit.EfficiencyTest.measureEfficiency" />
+      <item itemvalue="JUnit.EfficiencyTest.measureEfficiencySelectionSort" />
+      <item itemvalue="JUnit.ExtendedArcherTest.testCompareTo" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EfficiencyTest.measureEfficiencySelectionSort" />
+        <item itemvalue="JUnit.EfficiencyTest.measureEfficiency" />
         <item itemvalue="JUnit.ChampionSelectorTest.selInsSortAndCollectionSortResultInSameOrder" />
         <item itemvalue="JUnit.ExtendedArcherTest.testCompareTo" />
-        <item itemvalue="JUnit.ExtendedArcherTest" />
-        <item itemvalue="JUnit.ArcherTest" />
-        <item itemvalue="JUnit.ExtendedArcherTest.testgetWeightedScore" />
       </list>
     </recent_temporary>
   </component>
@@ -187,16 +213,5 @@
     <MESSAGE value="Extended tests from TestSetup. Added JavaDoc to testGetWeightedScore() test" />
     <MESSAGE value="sync" />
     <option name="LAST_COMMIT_MESSAGE" value="sync" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/nl/hva/ict/se/ads/ChampionSelector.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
