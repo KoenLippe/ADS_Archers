@@ -1,6 +1,5 @@
 package nl.hva.ict.se.ads;
 
-import nl.hva.ict.se.ads.setup.TestSetup;
 import nl.hva.ict.se.ads.utils.ArcherComparator;
 import nl.hva.ict.se.ads.utils.EfficiencyTimeHolder;
 import org.junit.jupiter.api.Test;
@@ -9,15 +8,13 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.List;
 
-public class EfficiencyTest extends TestSetup {
+public class EfficiencyTest  {
 
     private final int NUMBER_OF_TESTS = 10;
 
     private final int STARTING_ARCHERS = 100;
     private final int MAX_AMOUNT_OF_ARCHERS = 5_000_000;
     private final int MAX_AMOUNT_SECONDS = 20_000;
-
-    
 
 
     private void efficiencyTest(String method) {
