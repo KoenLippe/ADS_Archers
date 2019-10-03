@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="69e7baea-9e0b-46ae-ad95-ec3d4e3a4ac7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nl/hva/ict/se/ads/utils/EfficiencyTimeHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/nl/hva/ict/se/ads/EfficiencyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/hva/ict/se/ads/ChampionSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/hva/ict/se/ads/ChampionSelector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/hva/ict/se/ads/utils/sortingScheme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/hva/ict/se/ads/utils/ArcherComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/nl/hva/ict/se/ads/ArcherTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nl/hva/ict/se/ads/ArcherTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/nl/hva/ict/se/ads/ChampionSelectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nl/hva/ict/se/ads/ChampionSelectorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/nl/hva/ict/se/ads/ExtendedArcherTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nl/hva/ict/se/ads/ExtendedArcherTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/nl/hva/ict/se/ads/testSetup.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/hva/ict/se/ads/ChampionSelector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/hva/ict/se/ads/ChampionSelector.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/hva/ict/se/ads/utils/sortingScheme.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/nl/hva/ict/se/ads/ArcherTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/nl/hva/ict/se/ads/ArcherTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/nl/hva/ict/se/ads/ChampionSelectorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/nl/hva/ict/se/ads/ChampionSelectorTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/nl/hva/ict/se/ads/ExtendedArcherTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/nl/hva/ict/se/ads/ExtendedArcherTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/nl/hva/ict/se/ads/testSetup.class" beforeDir="false" />
-    </list>
+    <list default="true" id="69e7baea-9e0b-46ae-ad95-ec3d4e3a4ac7" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
