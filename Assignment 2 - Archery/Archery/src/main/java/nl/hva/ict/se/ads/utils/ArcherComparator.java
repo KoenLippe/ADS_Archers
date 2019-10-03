@@ -7,7 +7,7 @@ import java.util.Comparator;
 public class ArcherComparator implements Comparator<Archer> {
 
     @Override
-    public int compare(Archer archer2, Archer archer1) {
+    public int compare(Archer archer1, Archer archer2) {
         if (archer1.getTotalScore() == archer2.getTotalScore()) {
             if (archer1.getWeightedScore() == archer2.getWeightedScore()) {
 
