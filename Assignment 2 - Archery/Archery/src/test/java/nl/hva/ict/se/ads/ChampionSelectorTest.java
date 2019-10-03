@@ -31,8 +31,6 @@ class ChampionSelectorTest extends TestSetup {
             System.out.println(archer);
         }
 
-
-
         System.out.println();
         System.out.println();
         System.out.println();
