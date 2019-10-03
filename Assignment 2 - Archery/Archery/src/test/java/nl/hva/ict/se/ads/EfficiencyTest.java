@@ -35,7 +35,7 @@ public class EfficiencyTest extends TestSetup {
 
                 List<Archer> archers = Archer.generateArchers(amountOfArchers);
 
-                long start, end;
+                long start = 0, end = 0;
                 //Sorting
                 switch (method) {
                     case "insertion":
@@ -43,7 +43,6 @@ public class EfficiencyTest extends TestSetup {
                         start = System.currentTimeMillis();
                         ChampionSelector.selInsSort(archers, new ArcherComparator());
                         end = System.currentTimeMillis();
-                        duration = end - start;
                         break;
 
                     case "quick":
@@ -51,7 +50,6 @@ public class EfficiencyTest extends TestSetup {
                         start = System.currentTimeMillis();
                         ChampionSelector.quickSort(archers, new ArcherComparator());
                         end = System.currentTimeMillis();
-                        duration = end - start;
                         break;
 
                     case "collection":
@@ -59,12 +57,12 @@ public class EfficiencyTest extends TestSetup {
                         start = System.currentTimeMillis();
                         ChampionSelector.collectionSort(archers, new ArcherComparator());
                         end = System.currentTimeMillis();
-                        duration = end - start;
                         break;
                 }
 
 
                 //Calculating duration and putting it in holder object
+                duration = end - start;
                 timeHolder.put(amountOfArchers, duration);
 
                 System.out.println(String.format("%d;%d", amountOfArchers, duration));
