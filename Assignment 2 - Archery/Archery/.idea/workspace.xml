@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="69e7baea-9e0b-46ae-ad95-ec3d4e3a4ac7" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1RHnazZuRoWk6yXt6mjpcqmbTG3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../ads_archerassignment1" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="nl.hva.ict.se.ads" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.EfficiencyTest.efficiencyTestInsertionSort">
+    <configuration name="ChampionSelectorTest.selInsSortAndCollectionSortResultInSameOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="archery" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nl.hva.ict.se.ads.setup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nl.hva.ict.se.ads.models" />
+      <option name="MAIN_CLASS_NAME" value="nl.hva.ict.se.ads.models.ChampionSelectorTest" />
+      <option name="METHOD_NAME" value="selInsSortAndCollectionSortResultInSameOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EfficiencyTest.efficiencyTestInsertionSort" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="archery" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nl.hva.ict.se.ads.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nl.hva.ict.se.ads" />
+      <option name="MAIN_CLASS_NAME" value="nl.hva.ict.se.ads.EfficiencyTest" />
+      <option name="METHOD_NAME" value="efficiencyTestInsertionSort" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea -Xint" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EfficiencyTest.measureEfficiency" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="archery" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nl.hva.ict.se.ads.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nl.hva.ict.se.ads" />
+      <option name="MAIN_CLASS_NAME" value="nl.hva.ict.se.ads.EfficiencyTest" />
+      <option name="METHOD_NAME" value="measureEfficiency" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EfficiencyTest.measureEfficiencySelectionSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="archery" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nl.hva.ict.se.ads.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nl.hva.ict.se.ads" />
+      <option name="MAIN_CLASS_NAME" value="nl.hva.ict.se.ads.EfficiencyTest" />
+      <option name="METHOD_NAME" value="measureEfficiencySelectionSort" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExtendedArcherTest.testCompareTo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="archery" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nl.hva.ict.se.ads.setup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nl.hva.ict.se.ads.models" />
+      <option name="MAIN_CLASS_NAME" value="nl.hva.ict.se.ads.models.ExtendedArcherTest" />
+      <option name="METHOD_NAME" value="testCompareTo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.EfficiencyTest.efficiencyTestInsertionSort" />
+      <item itemvalue="JUnit.ChampionSelectorTest.selInsSortAndCollectionSortResultInSameOrder" />
+      <item itemvalue="JUnit.EfficiencyTest.measureEfficiency" />
+      <item itemvalue="JUnit.EfficiencyTest.measureEfficiencySelectionSort" />
+      <item itemvalue="JUnit.ExtendedArcherTest.testCompareTo" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.EfficiencyTest.measureEfficiencySelectionSort" />
+        <item itemvalue="JUnit.EfficiencyTest.measureEfficiency" />
+        <item itemvalue="JUnit.ChampionSelectorTest.selInsSortAndCollectionSortResultInSameOrder" />
+        <item itemvalue="JUnit.ExtendedArcherTest.testCompareTo" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="69e7baea-9e0b-46ae-ad95-ec3d4e3a4ac7" name="Default Changelist" comment="" />
+      <created>1569332956417</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569332956417</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Extended tests from TestSetup. Added JavaDoc to testGetWeightedScore() test">
+      <created>1569594560857</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1569594560857</updated>
+    </task>
+    <task id="LOCAL-00002" summary="sync">
+      <created>1570016640735</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1570016640735</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Extended tests from TestSetup. Added JavaDoc to testGetWeightedScore() test" />
+    <MESSAGE value="sync" />
+    <option name="LAST_COMMIT_MESSAGE" value="sync" />
+  </component>
+</project>
