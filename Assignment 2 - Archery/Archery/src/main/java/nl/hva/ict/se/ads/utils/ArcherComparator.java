@@ -7,17 +7,17 @@ import java.util.Comparator;
 public class ArcherComparator implements Comparator<Archer> {
 
     @Override
-    public int compare(Archer archer2, Archer archer1) {
-        if (archer1.getTotalScore() == archer2.getTotalScore()) {
-            if (archer1.getWeightedScore() == archer2.getWeightedScore()) {
+    public int compare(Archer archer1, Archer archer2) {
+        if (archer2.getTotalScore() == archer1.getTotalScore()) {
+            if (archer2.getWeightedScore() == archer1.getWeightedScore()) {
 
-                return archer1.getId() - archer2.getId();
+                return archer2.getId() - archer1.getId();
             }
 
-            return archer1.getWeightedScore() - archer2.getWeightedScore();
+            return archer2.getWeightedScore() - archer1.getWeightedScore();
         }
 
-        return archer1.getTotalScore() - archer2.getTotalScore();
+        return archer2.getTotalScore() - archer1.getTotalScore();
 
     }
 }

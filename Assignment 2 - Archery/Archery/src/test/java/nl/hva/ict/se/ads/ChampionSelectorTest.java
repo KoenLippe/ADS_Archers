@@ -1,6 +1,5 @@
 package nl.hva.ict.se.ads;
 
-import nl.hva.ict.se.ads.setup.TestSetup;
 import nl.hva.ict.se.ads.utils.ArcherComparator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -10,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-class ChampionSelectorTest extends TestSetup {
+class ChampionSelectorTest   {
     protected Comparator<Archer> comparator;
 
     @BeforeEach
@@ -30,8 +29,6 @@ class ChampionSelectorTest extends TestSetup {
         for(Archer archer : unsortedArchersForCollection) {
             System.out.println(archer);
         }
-
-
 
         System.out.println();
         System.out.println();
