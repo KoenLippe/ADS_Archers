@@ -4,6 +4,7 @@ import nl.hva.ict.se.ads.utils.ArcherComparator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -14,31 +15,29 @@ public class ExtendedChampionSelectorTest extends ChampionSelectorTest {
     @Test
     public void testQuickSort() {
         List<Archer> archers = Archer.generateArchers(10);
-        List<Archer> collectionSorted = archers;
+        List<Archer> collectionSorted = new ArrayList<>(archers);
         ChampionSelector.collectionSort(collectionSorted, new ArcherComparator());
 
 
 
-        ChampionSelector.quickSort(archers, new ArcherComparator());
-
-        System.out.println();
-        System.out.println();
-        System.out.println();
-
-        System.out.println("Using Own quicksort");
-        for(Archer archer : archers) {
-            System.out.println(archer);
-        }
-
-        System.out.println();
-        System.out.println();
-        System.out.println();
 
         System.out.println("Using Java's Selection sort");
-        for(Archer archer : collectionSorted) {
+        for (Archer archer : collectionSorted) {
             System.out.println(archer);
         }
 
+
+
+
+        System.out.println();
+        System.out.println();
+        System.out.println();
+
+        ChampionSelector.quickSort(archers, new ArcherComparator());
+        System.out.println("Using Own quicksort");
+        for (Archer archer : archers) {
+            System.out.println(archer);
+        }
 
 
 

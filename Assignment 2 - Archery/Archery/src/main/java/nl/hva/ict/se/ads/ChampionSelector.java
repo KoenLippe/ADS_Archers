@@ -46,62 +46,31 @@ public class ChampionSelector {
     private static void sort(List<Archer> archers, int low, int high, Comparator<Archer> comparator) {
         if (low < high) {
             int j = partition(archers, low, high, comparator);
-            sort(archers, low, j , comparator);
+            sort(archers, low, j - 1, comparator);
             sort(archers, j + 1, high, comparator);
         }
 
-//        if (low < high) {
-//            int j = partition(archers, low, high, comparator);
-//            sort(archers, low, j -1 , comparator);
-//            sort(archers, j + 1, high, comparator);
-//        }
 
     }
 
     private static int partition(List<Archer> archers, int low, int high, Comparator<Archer> comparator) {
 
-        /////////////////// Other Possible Implementation //////////////////
+
         //Pivot is the beginning
-//        int pivotIndex = high;
-//
-//        int i = low - 1; //Smalller index
-//
-//
-//        for (int j = low; j < high; j++) { //J = higher index
-//            if (comparator.compare(archers.get(j), archers.get(pivotIndex)) <= 0) {
-//                i++;
-//                swap(archers, i, j);
-//            }
-//        }
-//
-//        swap(archers, i + 1, high);
-//        return i + 1; //Correctly placed pivot position
+        int pivotIndex = high;
 
-        /////////////////// End Other Possible Implementation //////////////////
-
-        int pivotIndex = low;
-
-        int i = low;
-        int j = high - 1;
+        int i = low - 1; //Smalller index
 
 
-        while(i < j) {
-            do {
+        for (int j = low; j < high; j++) { //J = higher index
+            if (comparator.compare(archers.get(j), archers.get(pivotIndex)) <= 0) {
                 i++;
-            } while (comparator.compare(archers.get(i), archers.get(pivotIndex)) <= 0);
-
-            do {
-                j--;
-            } while(comparator.compare(archers.get(pivotIndex), archers.get(j)) > 0);
-
-            swap(archers, i, j);
+                swap(archers, i, j);
+            }
         }
 
-
-        swap(archers, low, j);
-
-        return j; //Correctly placed pivot index
-
+        swap(archers, i + 1, high);
+        return i + 1; //Correctly placed pivot position
 
     }
 
