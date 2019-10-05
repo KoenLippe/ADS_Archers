@@ -63,13 +63,20 @@ public class ChampionSelector {
 
 
         for (int j = low; j < high; j++) { //J = higher index
+
+            // If the archer at J has better scores than archer at the pivot, swap J with i and move i up one
             if (comparator.compare(archers.get(j), archers.get(pivotIndex)) <= 0) {
                 i++;
                 swap(archers, i, j);
+
+                // At the end of this if statement j also moves up one
             }
+
         }
 
+        // i is at the tail of the section of items less than the pivot. So we switch i+1 with the pivot
         swap(archers, i + 1, high);
+
         return i + 1; //Correctly placed pivot position
 
     }
