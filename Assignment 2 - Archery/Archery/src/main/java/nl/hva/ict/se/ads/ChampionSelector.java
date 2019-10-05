@@ -43,28 +43,51 @@ public class ChampionSelector {
         return archers;
     }
 
+    //Sorts the archers using quick sort
     private static void sort(List<Archer> archers, int low, int high, Comparator<Archer> comparator) {
+
+        //Skips sorting if the list is made of one item of if low and high aren't right
         if (low < high) {
-            int j = partition(archers, low, high, comparator);
-            sort(archers, low, j - 1, comparator);
-            sort(archers, j + 1, high, comparator);
+
+            // The partition method returns the pivot index.
+            int pivot = partition(archers, low, high, comparator);
+
+            //Then we proceed to sort the both partitions
+            //Sort lower partition
+            sort(archers, low, pivot - 1, comparator);
+
+            //Sort higher partition
+            sort(archers, pivot + 1, high, comparator);
         }
 
 
     }
 
+    /**
+     * This method assigns a pivot and divides the list into two partitions,
+     * items less than the pivot, and items greater than the pivot
+     *
+     * @param archers List of archers to be sorted
+     * @param low Lowerst index of the list
+     * @param high Higherst index of the list
+     * @param comparator Archer comparator
+     * @return Pivot index
+     */
     private static int partition(List<Archer> archers, int low, int high, Comparator<Archer> comparator) {
 
 
-        //Pivot is the beginning
+        //Pivot starts as the highest number
         int pivotIndex = high;
 
-        int i = low - 1; //Smalller index
+        // The variable "i" is going to be the tail of the partition of items greater than the pivot.
+        int i = low - 1;
 
 
-        for (int j = low; j < high; j++) { //J = higher index
+        // The variable "j" is going to scan the items ahead of "i" and determine where they should be placed
+        for (int j = low; j < high; j++) {
 
-            // If the archer at J has better scores than archer at the pivot, swap J with i and move i up one
+            // If the archer at "j" has better scores than archer at the pivot, swap J with i and move i up one
+            // The best archers are supposed to come first, so we throw them at the beginning of the list.
             if (comparator.compare(archers.get(j), archers.get(pivotIndex)) <= 0) {
                 i++;
                 swap(archers, i, j);
@@ -74,7 +97,7 @@ public class ChampionSelector {
 
         }
 
-        // i is at the tail of the section of items less than the pivot. So we switch i+1 with the pivot
+        // i is at the tail of the section of items greater than the pivot. So we switch i+1 with the pivot
         swap(archers, i + 1, high);
 
         return i + 1; //Correctly placed pivot position
