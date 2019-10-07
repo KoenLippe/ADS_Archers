@@ -72,6 +72,8 @@ public class EfficiencyTimeHolder {
                 total += (Long)tijd;
             }
 
+            bufferedWriter.write("");
+
         }
 
     }
