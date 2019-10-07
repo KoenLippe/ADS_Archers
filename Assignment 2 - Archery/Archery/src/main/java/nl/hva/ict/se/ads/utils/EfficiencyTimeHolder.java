@@ -1,5 +1,9 @@
 package nl.hva.ict.se.ads.utils;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -41,9 +45,33 @@ public class EfficiencyTimeHolder {
             }
 
             System.out.println();
+
+
+
+
+            //System.out.println();
             //Print average for archer.
-            System.out.println(String.format("Archers: %d, Average Time: %d", entry.getKey(), total/timeList.size()));
-            System.out.println();
+            //System.out.println(String.format("Archers: %d, Average Time: %d", entry.getKey(), total/timeList.size()));
+            //System.out.println();
+        }
+
+    }
+
+    public void save(BufferedWriter bufferedWriter) throws IOException {
+
+        for (Map.Entry<Integer, ArrayList<Long>> entry : map.entrySet()) {
+            ArrayList timeList = entry.getValue();
+
+            //Print numberOfArchers
+            bufferedWriter.write("Archers: " + entry.getKey() + ";");
+
+            long total = 0;
+            for (Object tijd: timeList) {
+                //Add the time
+                bufferedWriter.write(tijd + ";");
+                total += (Long)tijd;
+            }
+
         }
 
     }

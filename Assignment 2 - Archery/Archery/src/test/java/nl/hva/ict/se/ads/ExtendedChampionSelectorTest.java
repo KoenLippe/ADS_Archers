@@ -15,7 +15,9 @@ public class ExtendedChampionSelectorTest extends ChampionSelectorTest {
     @Test
     public void testQuickSort() {
         List<Archer> archers = Archer.generateArchers(10);
-        List<Archer> collectionSorted = new ArrayList<>(archers);
+        List<Archer> quickSorted = new ArrayList<>(archers);
+        List<Archer> insertionSorted = new ArrayList<>(archers);
+        List<Archer> collectionSorted = new ArrayList<>(archers);;
         ChampionSelector.collectionSort(collectionSorted, new ArcherComparator());
 
 
@@ -26,22 +28,31 @@ public class ExtendedChampionSelectorTest extends ChampionSelectorTest {
             System.out.println(archer);
         }
 
-
-
-
         System.out.println();
         System.out.println();
         System.out.println();
 
-        ChampionSelector.quickSort(archers, new ArcherComparator());
+
+        ChampionSelector.quickSort(quickSorted, new ArcherComparator());
         System.out.println("Using Own quicksort");
         for (Archer archer : archers) {
             System.out.println(archer);
         }
 
+        System.out.println();
+        System.out.println();
+        System.out.println();
 
+
+        ChampionSelector.quickSort(insertionSorted, new ArcherComparator());
+        System.out.println("Using Insertion sort");
+        for (Archer archer : insertionSorted) {
+            System.out.println(archer);
+        }
 
 
         Assertions.assertEquals(archers, collectionSorted);
+        Assertions.assertEquals(archers, insertionSorted);
+        Assertions.assertEquals(archers, quickSorted);
     }
 }

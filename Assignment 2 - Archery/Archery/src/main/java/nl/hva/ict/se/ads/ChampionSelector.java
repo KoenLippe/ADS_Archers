@@ -38,7 +38,6 @@ public class ChampionSelector {
      */
     public static List<Archer> quickSort(List<Archer> archers, Comparator<Archer> scoringScheme) {
 
-
         sort(archers, 0, archers.size() - 1, scoringScheme);
         return archers;
     }
@@ -49,8 +48,6 @@ public class ChampionSelector {
             sort(archers, low, j - 1, comparator);
             sort(archers, j + 1, high, comparator);
         }
-
-
     }
 
     private static int partition(List<Archer> archers, int low, int high, Comparator<Archer> comparator) {
