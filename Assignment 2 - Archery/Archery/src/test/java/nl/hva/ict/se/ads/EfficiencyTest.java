@@ -7,6 +7,8 @@ import org.junit.jupiter.api.Test;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.*;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -25,6 +27,7 @@ public class EfficiencyTest {
     private final int MAX_ARCHERS_INSERTION_XINT = 6400;
     private final int MAX_ARCHERS_QUICK_XINT = 204_800;
     private final int MAX_ARCHERS_COLLECTION_XINT = 819_200;
+
 
 
     @Test
@@ -135,8 +138,7 @@ public class EfficiencyTest {
         }
 
 
-        try {
-            BufferedWriter writer = new BufferedWriter(new FileWriter(new Date().toString()));
+        BufferedWriter writer = new BufferedWriter(new FileWriter(new Date().toString()));
 
             writer.write("\nInsertion sort\n");
             insertionTimeHolder.save(writer);
