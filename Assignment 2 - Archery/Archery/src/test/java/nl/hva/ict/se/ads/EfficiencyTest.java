@@ -7,13 +7,12 @@ import org.junit.jupiter.api.Test;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.*;
-import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+
 
 public class EfficiencyTest {
 
@@ -29,13 +28,21 @@ public class EfficiencyTest {
     private final int MAX_ARCHERS_COLLECTION_XINT = 819_200;
 
 
-
+    /**
+     * This methods tests all 3 sorting methods using the same array.
+     * The output gets stored in a file name with the following name "Efficiency Report: " + DateTimeStamp
+     *
+     * Result is shown in Excel file found in the zip
+     *
+     * @author koenlippe
+     */
     @Test
     public void testingAllSortingMethods() {
 
 
         LocalDateTime testStart = LocalDateTime.now();
 
+        //Own Class for holding putting and printing efficiency times
         EfficiencyTimeHolder insertionTimeHolder = new EfficiencyTimeHolder();
         EfficiencyTimeHolder quicksortTimeHolder = new EfficiencyTimeHolder();
         EfficiencyTimeHolder collectionTimeHolder = new EfficiencyTimeHolder();
@@ -124,6 +131,7 @@ public class EfficiencyTest {
                     collectionTimeHolder.put(amountOfArchers, collectionSortDuration);
                 }
 
+                //Setting duration to max time of any sorting method to ensure a test does not exceed the 20 sec mark.
                 long max = times[0];
                 if (times[1] > max) {
                     max = times[1];
@@ -137,8 +145,9 @@ public class EfficiencyTest {
 
         }
 
-
-        BufferedWriter writer = new BufferedWriter(new FileWriter(new Date().toString()));
+        try {
+            //Writing times to string
+            BufferedWriter writer = new BufferedWriter(new FileWriter(new Date().toString()));
 
             writer.write("\nInsertion sort\n");
             insertionTimeHolder.save(writer);
@@ -151,14 +160,15 @@ public class EfficiencyTest {
 
 
             LocalDateTime testEnd = LocalDateTime.now();
-            writer.write(String.format("Total duration tests: %s seconds", Duration.between(testStart, testEnd).toSeconds()));
+            writer.write(String.format("\nTotal duration tests: %s seconds", Duration.between(testStart, testEnd).toSeconds()));
 
             writer.close();
         } catch (IOException e) {
+            //Writing to string failed. Printing to console.
             insertionTimeHolder.print();
             quicksortTimeHolder.print();
             collectionTimeHolder.print();
-            System.out.println("Something went wrong printin to file. See terminal");
+            System.out.println("Something went wrong printing to a file. See terminal");
         }
 
     }

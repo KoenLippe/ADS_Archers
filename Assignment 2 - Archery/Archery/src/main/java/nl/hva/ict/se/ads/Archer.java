@@ -102,7 +102,8 @@ public class Archer {
      * parameter should hold the three points, one per arrow.
      *
      * @param round  the round for which to register the points.
-     * @param points the points shot during the round.
+     * @param points the points shot during the round.\
+     * @author Yan Lanna Alexandre & Koen Lippe
      */
     public void registerScoreForRound(int round, int[] points) {
 
@@ -112,6 +113,12 @@ public class Archer {
     }
 
 
+    /**
+     * Adds up all scores and returns it
+     *
+     * @return Total score over all rounds
+     * @author Yan Lanna Alexandre
+     */
     public int getTotalScore() {
         int totalScore = 0;
 
@@ -124,6 +131,12 @@ public class Archer {
         return totalScore;
     }
 
+    /**
+     * Rerturns weighted score as explained in assignment
+     *
+     * @return weighted score
+     * @author Yan Lanna Alexandre & Koen Lippe
+     */
     public int getWeightedScore() {
         int total = 0;
 

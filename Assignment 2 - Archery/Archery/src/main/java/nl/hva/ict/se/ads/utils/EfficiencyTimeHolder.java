@@ -21,6 +21,12 @@ public class EfficiencyTimeHolder {
         map = new HashMap<>();
     }
 
+    /**
+     * Used to store an efficiency time value at a certain key
+     *
+     * @param index The number of archers with the value
+     * @param value The time it took the sort the number of archer
+     */
     public void put(int index, long value) {
         //If no arraylist is present yet. Make one
         map.computeIfAbsent(index, k -> new ArrayList<Long>());
@@ -29,6 +35,11 @@ public class EfficiencyTimeHolder {
 
     }
 
+    /**
+     * Prints stored efficiency times to screen.
+     *
+     * @author koenlippe
+     */
     public void print() {
         //For each numberOfArchers generate a string that is
         for (Map.Entry<Integer, ArrayList<Long>> entry : map.entrySet()) {
@@ -37,22 +48,25 @@ public class EfficiencyTimeHolder {
             //Print numberOfArchers
             System.out.print(entry.getKey() + ";");
 
-            long total = 0;
+            //For every time in list output "tijd + ';'" to get value that can be used in Excel
+
             for (Object tijd: timeList) {
                 //Add the time
                 System.out.print(tijd + ";");
-                total += (Long)tijd;
             }
 
             System.out.println();
 
-            //Print average for archer.
-            System.out.println(String.format("Archers: %d, Average Time: %d", entry.getKey(), total/timeList.size()));
-            System.out.println();
         }
 
     }
 
+    /**
+     * Saves efficiency times to file using fiven bufferedWriter
+     *
+     * @param bufferedWriter Writer to use
+     * @author koenlippe
+     */
     public void save(BufferedWriter bufferedWriter) {
         try {
             for (Map.Entry<Integer, ArrayList<Long>> entry : map.entrySet()) {
@@ -61,11 +75,10 @@ public class EfficiencyTimeHolder {
                 //Print numberOfArchers
                 bufferedWriter.write(entry.getKey() + ";");
 
-                long total = 0;
+                //For every time in list output "tijd + ';'" to get value that can be used in Excel
                 for (Object tijd: timeList) {
                     //Add the time
                     bufferedWriter.write(tijd + ";");
-                    total += (Long)tijd;
                 }
 
 

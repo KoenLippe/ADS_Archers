@@ -14,7 +14,6 @@ public class ChampionSelector {
      */
     public static List<Archer> selInsSort(List<Archer> archers, Comparator<Archer> scoringScheme) {
         //Insertion Sort
-
         for (int i = 1; i < archers.size(); i++) {
             Archer comparingTo = archers.get(i);
 
@@ -37,7 +36,7 @@ public class ChampionSelector {
      * This method uses quick sort for sorting the archers.
      */
     public static List<Archer> quickSort(List<Archer> archers, Comparator<Archer> scoringScheme) {
-
+        //Sort array
         sort(archers, 0, archers.size() - 1, scoringScheme);
         return archers;
     }
@@ -51,15 +50,13 @@ public class ChampionSelector {
     }
 
     private static int partition(List<Archer> archers, int low, int high, Comparator<Archer> comparator) {
-
-
         //Pivot is the beginning
         int pivotIndex = high;
 
         int i = low - 1; //Smalller index
 
 
-        for (int j = low; j < high; j++) { //J = higher index
+        for (int j = low; j < high; j++) { //j = higher index
             if (comparator.compare(archers.get(j), archers.get(pivotIndex)) <= 0) {
                 i++;
                 swap(archers, i, j);
@@ -71,7 +68,7 @@ public class ChampionSelector {
 
     }
 
-
+    //Swaps two archers
     private static void swap(List<Archer> archers, int archer1, int archer2) {
         Archer savedArcher = archers.get(archer1);  //Save variable from being overridden
         archers.set(archer1, archers.get(archer2)); //2 times archer2
