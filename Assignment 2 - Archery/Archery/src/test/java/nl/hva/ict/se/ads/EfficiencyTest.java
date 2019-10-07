@@ -18,10 +18,10 @@ import java.util.List;
 
 public class EfficiencyTest {
 
-    private final int NUMBER_OF_TESTS = 1;
+    private final int NUMBER_OF_TESTS = 10;
 
     private final int STARTING_ARCHERS = 100;
-    private final int MAX_AMOUNT_OF_ARCHERS = 2_000;
+    private final int MAX_AMOUNT_OF_ARCHERS = 2_000_000;
     private final int MAX_AMOUNT_SECONDS = 20_000;
 
 
