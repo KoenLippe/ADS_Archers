@@ -149,6 +149,8 @@ public class EfficiencyTest {
             //Writing times to string
             BufferedWriter writer = new BufferedWriter(new FileWriter(new Date().toString()));
 
+        try { BufferedWriter writer = new BufferedWriter(new FileWriter(new Date().toString()));
+
             writer.write("\nInsertion sort\n");
             insertionTimeHolder.save(writer);
 
