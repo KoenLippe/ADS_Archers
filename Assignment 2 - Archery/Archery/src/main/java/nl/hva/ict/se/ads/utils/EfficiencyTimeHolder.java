@@ -46,36 +46,37 @@ public class EfficiencyTimeHolder {
 
             System.out.println();
 
-
-
-
-            //System.out.println();
             //Print average for archer.
-            //System.out.println(String.format("Archers: %d, Average Time: %d", entry.getKey(), total/timeList.size()));
-            //System.out.println();
+            System.out.println(String.format("Archers: %d, Average Time: %d", entry.getKey(), total/timeList.size()));
+            System.out.println();
         }
 
     }
 
-    public void save(BufferedWriter bufferedWriter) throws IOException {
+    public void save(BufferedWriter bufferedWriter) {
+        try {
+            for (Map.Entry<Integer, ArrayList<Long>> entry : map.entrySet()) {
+                ArrayList timeList = entry.getValue();
 
-        for (Map.Entry<Integer, ArrayList<Long>> entry : map.entrySet()) {
-            ArrayList timeList = entry.getValue();
+                //Print numberOfArchers
+                bufferedWriter.write(entry.getKey() + ";");
 
-            //Print numberOfArchers
-            bufferedWriter.write(entry.getKey() + ";");
+                long total = 0;
+                for (Object tijd: timeList) {
+                    //Add the time
+                    bufferedWriter.write(tijd + ";");
+                    total += (Long)tijd;
+                }
 
-            long total = 0;
-            for (Object tijd: timeList) {
-                //Add the time
-                bufferedWriter.write(tijd + ";");
-                total += (Long)tijd;
+
+                bufferedWriter.write("\n");
+
             }
 
-
-            bufferedWriter.write("\n");
-
+        }catch (IOException e) {
+            e.printStackTrace();
         }
+
 
     }
 

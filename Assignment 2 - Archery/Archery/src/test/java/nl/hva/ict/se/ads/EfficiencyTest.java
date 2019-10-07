@@ -7,11 +7,8 @@ import org.junit.jupiter.api.Test;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.time.Duration;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.Period;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -30,9 +27,8 @@ public class EfficiencyTest {
     private final int MAX_ARCHERS_COLLECTION_XINT = 819_200;
 
 
-
     @Test
-    public void testingAllSortingMethods() throws IOException {
+    public void testingAllSortingMethods() {
 
 
         LocalDateTime testStart = LocalDateTime.now();
@@ -139,24 +135,29 @@ public class EfficiencyTest {
         }
 
 
-        BufferedWriter writer = new BufferedWriter(new FileWriter(new Date().toString()));
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(new Date().toString()));
+
+            writer.write("\nInsertion sort\n");
+            insertionTimeHolder.save(writer);
+
+            writer.write("\nQuick sort\n");
+            quicksortTimeHolder.save(writer);
+
+            writer.write("\nCollection sort\n");
+            collectionTimeHolder.save(writer);
 
 
-        writer.write("\nInsertion sort\n");
-        insertionTimeHolder.save(writer);
+            LocalDateTime testEnd = LocalDateTime.now();
+            writer.write(String.format("Total duration tests: %s seconds", Duration.between(testStart, testEnd).toSeconds()));
 
-        writer.write("\nQuick sort\n");
-        quicksortTimeHolder.save(writer);
-
-        writer.write("\nCollection sort\n");
-        collectionTimeHolder.save(writer);
-
-
-        LocalDateTime testEnd = LocalDateTime.now();
-        writer.write(String.format("Total duration tests: %s seconds", Duration.between(testStart, testEnd).toSeconds()));
-
-        writer.close();
-
+            writer.close();
+        } catch (IOException e) {
+            insertionTimeHolder.print();
+            quicksortTimeHolder.print();
+            collectionTimeHolder.print();
+            System.out.println("Something went wrong printin to file. See terminal");
+        }
 
     }
 
