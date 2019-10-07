@@ -63,7 +63,7 @@ public class EfficiencyTimeHolder {
             ArrayList timeList = entry.getValue();
 
             //Print numberOfArchers
-            bufferedWriter.write("Archers: " + entry.getKey() + ";");
+            bufferedWriter.write(entry.getKey() + ";");
 
             long total = 0;
             for (Object tijd: timeList) {
@@ -72,7 +72,8 @@ public class EfficiencyTimeHolder {
                 total += (Long)tijd;
             }
 
-            bufferedWriter.write("");
+
+            bufferedWriter.write("\n");
 
         }
 

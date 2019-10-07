@@ -9,17 +9,19 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.time.Duration;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.Period;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 public class EfficiencyTest {
 
-    private final int NUMBER_OF_TESTS = 2;
+    private final int NUMBER_OF_TESTS = 10;
 
     private final int STARTING_ARCHERS = 100;
-    private final int MAX_AMOUNT_OF_ARCHERS = 2000;
+    private final int MAX_AMOUNT_OF_ARCHERS = 2_000_000;
     private final int MAX_AMOUNT_SECONDS = 20_000;
 
 
@@ -27,69 +29,13 @@ public class EfficiencyTest {
     private final int MAX_ARCHERS_QUICK_XINT = 204_800;
     private final int MAX_ARCHERS_COLLECTION_XINT = 819_200;
 
-    private void efficiencyTest(String method) {
 
-        LocalDateTime testStart = LocalDateTime.now();
-        EfficiencyTimeHolder timeHolder = new EfficiencyTimeHolder();
-
-        //Testing Efficiency test 10 times.
-        for (int i = 1; i < NUMBER_OF_TESTS + 1; i++) {
-            System.out.println(String.format("Running %s sort test #%d", method, i));
-
-
-            long duration = 0;
-            //Testing efficiency itself
-            for (int amountOfArchers = STARTING_ARCHERS; amountOfArchers < MAX_AMOUNT_OF_ARCHERS && duration < MAX_AMOUNT_SECONDS; amountOfArchers *= 2) {
-
-
-                List<Archer> archers = Archer.generateArchers(amountOfArchers);
-
-                long start = 0, end = 0;
-                //Sorting
-                switch (method) {
-                    case "insertion":
-                        //Selection Sort
-                        start = System.currentTimeMillis();
-                        ChampionSelector.selInsSort(archers, new ArcherComparator());
-                        end = System.currentTimeMillis();
-                        break;
-
-                    case "quick":
-                        //Quick Sort
-                        start = System.currentTimeMillis();
-                        ChampionSelector.quickSort(archers, new ArcherComparator());
-                        end = System.currentTimeMillis();
-                        break;
-
-                    case "collection":
-                        //Collection Sort
-                        start = System.currentTimeMillis();
-                        ChampionSelector.collectionSort(archers, new ArcherComparator());
-                        end = System.currentTimeMillis();
-                        break;
-                }
-
-
-                //Calculating duration and putting it in holder object
-                timeHolder.put(amountOfArchers, duration);
-
-                System.out.println(String.format("%d;%d", amountOfArchers, duration));
-            }
-            System.out.println();
-        }
-
-        //Printing test results
-        timeHolder.print();
-
-        LocalDateTime testEnd = LocalDateTime.now();
-
-        System.out.println("All tests took: " + Duration.between(testStart, testEnd).toSeconds() + " seconds");
-
-    }
 
     @Test
     public void testingAllSortingMethods() throws IOException {
 
+
+        LocalDateTime testStart = LocalDateTime.now();
 
         EfficiencyTimeHolder insertionTimeHolder = new EfficiencyTimeHolder();
         EfficiencyTimeHolder quicksortTimeHolder = new EfficiencyTimeHolder();
@@ -193,30 +139,21 @@ public class EfficiencyTest {
         }
 
 
-
         BufferedWriter writer = new BufferedWriter(new FileWriter(new Date().toString()));
 
 
-
-
-        System.out.println("Insertion sort");
-        writer.write("Insertion sort");
+        writer.write("\nInsertion sort\n");
         insertionTimeHolder.save(writer);
-        System.out.println();
-        System.out.println();
-        System.out.println();
 
-        System.out.println("Quick sort");
-        quicksortTimeHolder.print();
-        System.out.println();
-        System.out.println();
-        System.out.println();
+        writer.write("\nQuick sort\n");
+        quicksortTimeHolder.save(writer);
 
-        System.out.println("Collection sort");
-        collectionTimeHolder.print();
-        System.out.println();
-        System.out.println();
-        System.out.println();
+        writer.write("\nCollection sort\n");
+        collectionTimeHolder.save(writer);
+
+
+        LocalDateTime testEnd = LocalDateTime.now();
+        writer.write(String.format("Total duration tests: %s seconds", Duration.between(testStart, testEnd).toSeconds()));
 
         writer.close();
 
