@@ -3,8 +3,6 @@ package nl.hva.ict.se.ads;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.util.List;
-
 /**
  * Place all your own tests for Archer in this class. Tests in any other class will be ignored!
  */
@@ -17,35 +15,38 @@ public class ExtendedArcherTest extends ArcherTest {
 
     Archer archer1, archer2;
 
-
     public void setup() {
         archer1 = new Archer("Koen", "Lippe");
         archer2 = new Archer("Yan", "Alexandre");
-        int[] points = new int[]{1, 1, 1};
+        int[] points = new int[]{1, 0, 1};
         int[] points2 = new int[]{2, 2, 2};
 
         for (int i = 0; i < Archer.MAX_ROUNDS; i++) {
             archer1.registerScoreForRound(i, points);
             archer2.registerScoreForRound(i, points2);
         }
-
     }
 
     @Test
     public void testgetWeightedScore() {
-        final int TEST_VALUE = 8;
+        setup();
+        int expected;
 
-        List<Archer> list = Archer.generateArchers(2);
-        int[] points = new int[]{TEST_VALUE, TEST_VALUE + 1, TEST_VALUE};
+        expected = ((1 + 1) + (1 + 1) - (1 * 7)) * Archer.MAX_ROUNDS;
+        Assertions.assertEquals(expected, archer1.getWeightedScore());
 
-        for (int i = 0; i < Archer.MAX_ROUNDS; i++) {
-            list.get(0).registerScoreForRound(i, points);
-        }
+        //Using seconds point array in setup()
+        expected = ((2 + 1) + (2 + 1) + (2 + 1)) * Archer.MAX_ROUNDS;
+        Assertions.assertEquals(expected, archer2.getWeightedScore());
 
-        int expected = (TEST_VALUE + 1 + TEST_VALUE + 2 + TEST_VALUE + 1) * Archer.MAX_ROUNDS;
+    }
 
-        Assertions.assertEquals(list.get(0).getWeightedScore(), expected);
-
+    @Test
+    public void testGetTotalScore() {
+        setup();
+        //2,2,2 = 3 points per rounds
+        int expected = Archer.MAX_ROUNDS * (3 * 2);
+        Assertions.assertEquals(expected, archer2.getTotalScore());
     }
 
 }

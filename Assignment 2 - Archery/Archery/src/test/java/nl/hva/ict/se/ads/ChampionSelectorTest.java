@@ -14,34 +14,19 @@ class ChampionSelectorTest   {
 
     @BeforeEach
     public void createComparator() {
-        comparator = new ArcherComparator();
         // Instantiate your own comparator here...
         // comparator = new .....();
+        comparator = new ArcherComparator();
     }
 
     @Test
     public void selInsSortAndCollectionSortResultInSameOrder() {
         List<Archer> unsortedArchersForSelIns = Archer.generateArchers(4); //was 23
         List<Archer> unsortedArchersForCollection = new ArrayList<>(unsortedArchersForSelIns);
+
+
         List<Archer> sortedArchersSelIns = ChampionSelector.selInsSort(unsortedArchersForSelIns, comparator);
-
-
-        for(Archer archer : unsortedArchersForCollection) {
-            System.out.println(archer);
-        }
-
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println();
-
         List<Archer> sortedArchersCollection = ChampionSelector.collectionSort(unsortedArchersForCollection, comparator);
-
-
-        for (Archer archer : sortedArchersCollection) {
-            System.out.println(archer);
-        }
-
 
         Assertions.assertEquals(sortedArchersCollection, sortedArchersSelIns);
     }
