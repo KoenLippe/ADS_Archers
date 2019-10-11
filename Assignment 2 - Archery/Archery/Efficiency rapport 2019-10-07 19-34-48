@@ -1,0 +1,23 @@
+
+Insertion sort
+1600;79;
+800;17;
+400;6;
+100;0;
+200;1;
+
+Quick sort
+1600;3;
+800;1;
+400;1;
+100;0;
+200;0;
+
+Collection sort
+1600;4;
+800;2;
+400;1;
+100;0;
+200;0;
+
+Total duration tests: 0 seconds

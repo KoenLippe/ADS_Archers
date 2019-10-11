@@ -5,8 +5,10 @@ import nl.hva.ict.se.ads.utils.EfficiencyTimeHolder;
 import org.junit.jupiter.api.Test;
 
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -145,9 +147,12 @@ public class EfficiencyTest {
 
         }
 
+
         try {
-            //Writing times to string
-            BufferedWriter writer = new BufferedWriter(new FileWriter(new Date().toString()));
+            Date date = new Date() ;
+            File file = new File("Efficiency rapport " + new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(date));
+
+            BufferedWriter writer = new BufferedWriter(new FileWriter(file));
 
             writer.write("\nInsertion sort\n");
             insertionTimeHolder.save(writer);
@@ -165,6 +170,7 @@ public class EfficiencyTest {
             writer.close();
         } catch (IOException e) {
             //Writing to string failed. Printing to console.
+            e.printStackTrace();
             insertionTimeHolder.print();
             quicksortTimeHolder.print();
             collectionTimeHolder.print();
